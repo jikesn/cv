@@ -12,4 +12,4 @@
 - 新浪微博：[吾爱分享官微](http://weibo.com/577227117)  
 - 联系QQ：[740749820](tencent://message/?uin=740749820&Site=http://www.wuaishare.cn&Menu=yes)
 
-## 演示地址 [点击进入](https://wuaishare.github.io/cv/)
+## 演示地址 [点击进入](https://jikesn.github.io/cv/)
