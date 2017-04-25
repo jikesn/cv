@@ -1,71 +1,71 @@
 a:hover {
-	color:#30b1e6;
+	color:#428EDA;
 }
 
 .navigation li:before {
 content:'';
-background:#30b1e6;
+background:#428EDA;
 }
 
 .sep1 {
-background:#30b1e6;
+background:#428EDA;
 }
 
 .sep2 {
-background:#30b1e6;
+background:#428EDA;
 }
 
 .np-controls a:hover i {
-color:#30b1e6;
+color:#428EDA;
 }
 
 #filter-list li:hover {
-background:#30b1e6;
+background:#428EDA;
 }
 
 #filter-list li.active {
-background:#30b1e6;
+background:#428EDA;
   color: #2c383c;
 }
 
 .skills-bg span {
-background:#30b1e6;
+background:#428EDA;
 }
 
 .services-info ul li:hover {
-background:#30b1e6;
+background:#428EDA;
 }
 
 .link-post {
-background:#30b1e6;
+background:#428EDA;
 }
 
 .quote-post blockquote {
-color:#30b1e6;
+color:#428EDA;
 }
 
 .contact-form button {
-background:#30b1e6;
+background:#428EDA;
 }
 
 .contact-form button:hover {
-color:#30b1e6;
+color:#428EDA;
 }
 
 .social li a:hover {
-color:#30b1e6;
+color:#428EDA;
 }
 
 .reply {
-background:#30b1e6;
+background:#428EDA;
 }
 
 .reply:hover {
-color:#30b1e6;
+color:#428EDA;
 }
 
 .overlay {
-background:rgba(48,177,230,0.9);
+background:rgba(66,142,218,0.9);
 }
 
 .folio-img h4 ,
