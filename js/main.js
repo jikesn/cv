@@ -47,7 +47,8 @@ jQuery(document).ready(function($) {
 	$('.skill3').css('width', '85%');
 	$('.skill4').css('width', '80%');
   $('.skill5').css('width', '95%');
-	$('.skill6').css('width', '20%');
+  $('.skill6').css('width', '30%');
+	$('.skill7').css('width', '20%');
 	},{accX: 0, accY: -150});
 });
 
