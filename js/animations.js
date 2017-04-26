@@ -1,4 +1,34 @@
 $(window).scroll(function() {
+	$('.fadeInDown').each(function(){
+	var imagePos = $(this).offset().top;
+	var topOfWindow = $(window).scrollTop();
+		if (imagePos < topOfWindow+500) {
+			$(this).addClass("animated fadeInDown");
+		}
+	});
+});
+
+$(window).scroll(function() {
+	$('.slideInLeft').each(function(){
+	var imagePos = $(this).offset().top;
+	var topOfWindow = $(window).scrollTop();
+		if (imagePos < topOfWindow+500) {
+			$(this).addClass("animated slideInLeft");
+		}
+	});
+});
+
+$(window).scroll(function() {
+	$('.slideInRight').each(function(){
+	var imagePos = $(this).offset().top;
+	var topOfWindow = $(window).scrollTop();
+		if (imagePos < topOfWindow+500) {
+			$(this).addClass("animated slideInRight");
+		}
+	});
+});
+
+$(window).scroll(function() {
 	$('.profile h2').each(function(){
 	var imagePos = $(this).offset().top;
 	var topOfWindow = $(window).scrollTop();
@@ -26,7 +56,7 @@ $(window).scroll(function() {
 			$(this).addClass("animated flipInX");
 		}
 	});
-});		
+});
 
 $(window).scroll(function() {
 	$('#portfolio .item').each(function(){
@@ -36,7 +66,7 @@ $(window).scroll(function() {
 			$(this).addClass("animated flipInX");
 		}
 	});
-});	
+});
 
 $(window).scroll(function() {
 	$('.page-head').each(function(){
@@ -46,27 +76,27 @@ $(window).scroll(function() {
 			$(this).addClass("animated fadeInDown");
 		}
 	});
-});	
+});
 
 $(window).scroll(function() {
-	$('.resume-info').each(function(){
+	$('.skills-display').each(function(){
 	var imagePos = $(this).offset().top;
 	var topOfWindow = $(window).scrollTop();
 		if (imagePos < topOfWindow+500) {
 			$(this).addClass("animated slideInLeft");
 		}
 	});
-});	
+});
 
 $(window).scroll(function() {
-	$('.services-info li').each(function(){
+	$('.skills-table li').each(function(){
 	var imagePos = $(this).offset().top;
 	var topOfWindow = $(window).scrollTop();
 		if (imagePos < topOfWindow+500) {
 			$(this).addClass("animated flipInX");
 		}
 	});
-});	
+});
 
 $(window).scroll(function() {
 	$('article').each(function(){
@@ -76,7 +106,7 @@ $(window).scroll(function() {
 			$(this).addClass("animated flipInX");
 		}
 	});
-});	
+});
 
 $(window).scroll(function() {
 	$('.contact-form').each(function(){
@@ -86,4 +116,4 @@ $(window).scroll(function() {
 			$(this).addClass("animated fadeInUp");
 		}
 	});
-});	
+});

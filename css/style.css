@@ -1,6 +1,8 @@
 /*------------------------------------------------------------------
-Theme Name:	PREMIUM LAYERS VCARD
+Theme Name:	个人求职简历-网页版
 Version:	1.0
+author: 逸轩
+QQ：740749820
 -------------------------------------------------------------------*/
 
 /*------------------------------------------------------------------
@@ -11,11 +13,12 @@ Version:	1.0
 	3. Theme Extras
 	4. Main Content
 	5. Profile
-	6. Portfolio
-	7. Resume
-		7.1. Skills Info
-		7.2. Services
-	8. Blog
+	6. Project Display
+	7. Skills Display
+	  7.1. skills table
+		7.2. Skills Info
+		7.3. skills more
+	8. Project details
 	9. Contact
 		9.1. Map Styles
 		9.2. Contact Info
@@ -322,7 +325,7 @@ a:hover {
 }
 
 /*--------------------------------------------
-                6. PORTFOLIO
+                6. Project display
 ---------------------------------------------- */
 
 .works {
@@ -448,17 +451,17 @@ a:hover {
 }
 
 /*--------------------------------------------
-                  7. RESUME
+                  7. Skills Display
 ---------------------------------------------- */
 
-.resume {
+.skills {
 	padding: 30px 30px 0;
 	margin-bottom: 0px;
 	overflow: hidden;
 	background: #fff;
 }
 
-.resume h4 {
+.skills h4 {
 	color: #2c383c;
 	margin: 0px;
 	font-size: 24px;
@@ -466,22 +469,25 @@ a:hover {
 	margin-top: 20px;
 }
 
-.resume-info ul {
+.skills-display ul {
 	padding: 0px;
-}
-
-.resume-info ul {
 	margin-top: -15px;
 }
 
-.resume-info ul li {
+.skills-display li::before,.project-content li::before{
+	content:"★ ";
+  color:#428eda;
+}
+
+.skills-display ul li,.project-content ul li {
+	font-size:18px;
 	border-bottom: 1px solid #ededed;
 	padding: 15px 0 20px;
 	margin: 0px;
 	list-style: none;
 }
 
-.resume-info p {
+.skills-display p {
 	margin: 0px;
 	color: #828282;
 	font-size: 15px;
@@ -489,7 +495,7 @@ a:hover {
 	margin-top: 5px;
 }
 
-.resume-info h5 {
+.skills-display h5 {
 	font-size: 16px;
 	font-weight: bold;
 	color: #2c383c;
@@ -504,7 +510,96 @@ a:hover {
 	margin-right: 5px;
 }
 
-/* 7.1. Skills Info */
+/* 7.1. Skills table */
+
+.skills-table {
+	border-bottom: 1px solid #ededed;
+	padding-bottom: 30px;
+}
+
+.skills-table ul {
+	padding: 0px;
+	border: 0 solid #428eda;
+	border-width: 0 0 1px 1px;
+	display: table;
+	width: 100%;
+	margin-top: 30px;
+}
+
+.skills-table ul li {
+	width: 33.3333%;
+	padding: 35px 15px 20px;
+	float: left;
+	list-style: none;
+	border: 0 solid #428eda;
+	border-width: 1px 1px 0 0;
+	height: 165px;
+	cursor: pointer;
+	-webkit-transition: all .3s ease-in-out;
+	-moz-transition: all .3s ease-in-out;
+	-o-transition: all .3s ease-in-out;
+	transition: all .3s ease-in-out;
+}
+
+.skills-table ul li i {
+	color: #428eda;
+	text-align: center;
+	font-size: 36px;
+	display: table;
+	margin: 0 auto;
+	padding-bottom: 25px;
+	margin-bottom: 14px;
+	background: url(../images/sep.png) no-repeat bottom center;
+	position: relative;
+	width: 43px;
+	-webkit-transition: all .3s ease-in-out;
+	-moz-transition: all .3s ease-in-out;
+	-o-transition: all .3s ease-in-out;
+	transition: all .3s ease-in-out;
+}
+
+.skills-table ul li h5 {
+	color: #2c383c;
+	text-align: center;
+	font-size: 18px;
+	font-weight: 400;
+	-webkit-transition: all .3s ease-in-out;
+	-moz-transition: all .3s ease-in-out;
+	-o-transition: all .3s ease-in-out;
+	transition: all .3s ease-in-out;
+}
+
+.skills-table ul li:hover i {
+	padding-bottom: 8px;
+	margin-bottom: 0px;
+	background: none;
+	color: #fff;
+	-webkit-transition: all .3s ease-in-out;
+	-moz-transition: all .3s ease-in-out;
+	-o-transition: all .3s ease-in-out;
+	transition: all .3s ease-in-out;
+}
+
+.skills-table ul li:hover h5 {
+	padding-bottom: 25px;
+	color: #fff;
+	margin-bottom: 14px;
+	background: url(../images/sep-lite.png) no-repeat bottom center;
+	-webkit-transition: all .3s ease-in-out;
+	-moz-transition: all .3s ease-in-out;
+	-o-transition: all .3s ease-in-out;
+	transition: all .3s ease-in-out;
+}
+
+.skills-table ul li:hover {
+	background: #ffd42d;
+	-webkit-transition: all .3s ease-in-out;
+	-moz-transition: all .3s ease-in-out;
+	-o-transition: all .3s ease-in-out;
+	transition: all .3s ease-in-out;
+}
+
+/* 7.2. Skills Info */
 
 .skills-info {
 	padding-bottom: 20px;
@@ -556,100 +651,11 @@ a:hover {
 	transition: all .7s ease-in-out;
 }
 
-/* 7.2. Services */
-
-.services-info {
-	border-bottom: 1px solid #ededed;
-	padding-bottom: 30px;
-}
-
-.services-info ul {
-	padding: 0px;
-	border: 0 solid #428eda;
-	border-width: 0 0 1px 1px;
-	display: table;
-	width: 100%;
-	margin-top: 30px;
-}
-
-.services-info ul li {
-	width: 33.3333%;
-	padding: 35px 15px 20px;
-	float: left;
-	list-style: none;
-	border: 0 solid #428eda;
-	border-width: 1px 1px 0 0;
-	height: 165px;
-	cursor: pointer;
-	-webkit-transition: all .3s ease-in-out;
-	-moz-transition: all .3s ease-in-out;
-	-o-transition: all .3s ease-in-out;
-	transition: all .3s ease-in-out;
-}
-
-.services-info ul li i {
-	color: #428eda;
-	text-align: center;
-	font-size: 36px;
-	display: table;
-	margin: 0 auto;
-	padding-bottom: 25px;
-	margin-bottom: 14px;
-	background: url(../images/sep.png) no-repeat bottom center;
-	position: relative;
-	width: 43px;
-	-webkit-transition: all .3s ease-in-out;
-	-moz-transition: all .3s ease-in-out;
-	-o-transition: all .3s ease-in-out;
-	transition: all .3s ease-in-out;
-}
-
-.services-info ul li h5 {
-	color: #2c383c;
-	text-align: center;
-	font-size: 18px;
-	font-weight: 400;
-	-webkit-transition: all .3s ease-in-out;
-	-moz-transition: all .3s ease-in-out;
-	-o-transition: all .3s ease-in-out;
-	transition: all .3s ease-in-out;
-}
-
-.services-info ul li:hover i {
-	padding-bottom: 8px;
-	margin-bottom: 0px;
-	background: none;
-	color: #fff;
-	-webkit-transition: all .3s ease-in-out;
-	-moz-transition: all .3s ease-in-out;
-	-o-transition: all .3s ease-in-out;
-	transition: all .3s ease-in-out;
-}
-
-.services-info ul li:hover h5 {
-	padding-bottom: 25px;
-	color: #fff;
-	margin-bottom: 14px;
-	background: url(../images/sep-lite.png) no-repeat bottom center;
-	-webkit-transition: all .3s ease-in-out;
-	-moz-transition: all .3s ease-in-out;
-	-o-transition: all .3s ease-in-out;
-	transition: all .3s ease-in-out;
-}
-
-.services-info ul li:hover {
-	background: #ffd42d;
-	-webkit-transition: all .3s ease-in-out;
-	-moz-transition: all .3s ease-in-out;
-	-o-transition: all .3s ease-in-out;
-	transition: all .3s ease-in-out;
-}
-
 /*--------------------------------------------
-                  8. BLOG
+                  8. Project details
 ---------------------------------------------- */
 
-.blog {
+.project {
 	padding: 30px 30px 0;
 	margin-bottom: 0px;
 	overflow: hidden;
@@ -731,47 +737,46 @@ article p {
 	text-decoration: underline;
 }
 
-.quote-post {
+.project-info {
 	background: #2d383c;
-	padding: 40px 40px 50px;
+	padding: 20px 25px 20px;
 	padding-bottom: 0px;
 	border: none;
-	margin-bottom: 60px;
+	margin-bottom: 0;
 }
 
-.quote-post blockquote {
+.project-info blockquote {
 	border: none;
 	padding: 0px;
 	color: #ffd42d;
-	font-size: 27px;
+	font-size: 16px;
 	font-family: Neuton;
 	font-weight: 200;
-	font-style: italic;
 	line-height: 30px;
 	text-align: center;
 }
 
-.quote-post i {
+.project-info i {
 	color: #fff;
 	display: block;
 	text-align: center;
 	font-size: 30px;
 }
 
-.author-name {
+.remarks {
 	color: #FFF;
 	text-align: center;
-	font-size: 22px;
+	font-size: 16px;
 	font-weight: bold;
 	display: table;
-	margin: 10px auto 35px;
+	margin: 10px auto 20px;
 }
 
 .no-border {
 	border-bottom: 0px;
 }
 
-.blog-wrap {
+.project-wrap {
 	padding-top: 30px;
 }
 
@@ -984,15 +989,19 @@ footer p {
 	color: #ffd42d;
 }
 
+.social li a i{
+	font-size: 18px;
+}
+
 /*--------------------------------------------
                11. BLOG - SINGLE POST
 ---------------------------------------------- */
 
-.blog-single p {
+.project-single p {
 	margin-bottom: 17px;
 }
 
-.blog-single-img {
+.project-single-img {
 	margin-bottom: 25px;
 }
 
@@ -1069,7 +1078,7 @@ footer p {
 	float: right;
 }
 
-.blog-single h4 {
+.project-single h4 {
 	color: #2c383c;
 	margin: 0px 0px 30px;
 	font-size: 24px;
@@ -1177,7 +1186,7 @@ footer p {
 	width: 100%;
 }
 
-.services-info ul li {
+.skills-table ul li {
 	width: 100%;
 }
 
@@ -1233,7 +1242,7 @@ footer {
 	margin: 0 auto;
 }
 
-.services-info ul li {
+.skills-table ul li {
 	width: 50%;
 }
 
