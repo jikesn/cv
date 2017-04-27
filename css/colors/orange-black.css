@@ -36,7 +36,7 @@ background:#eca928;
 background:#eca928;
 }
 
-.link-post {
+.project-link {
 background:#eca928;
 }
 
@@ -75,9 +75,9 @@ background:rgba(236,169,40,0.9);
 .navigation li a:hover, .navigation li a:hover i, .flex-active a, .flex-active a i ,
 #filter-list li:hover ,
 #filter-list li.active ,
-.link-post i ,
-.link-post a ,
-.link-post a:hover ,
+.project-link i ,
+.project-link a ,
+.project-link a:hover ,
 .reply ,
 .contact-form button {
 color:#4e503b;
