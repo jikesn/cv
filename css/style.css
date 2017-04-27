@@ -826,14 +826,10 @@ article p {
 	font-size: 20px;
 	color: #828282;
 	list-style: none;
-	margin-right: 18px;
+	height: 30px;
+	line-height: 30px;
 }
 
-.apply-info ul li i {
-	margin-right: 5px;
-	color: #4c4d4f;
-	font-size: 16px;
-}
 
 /* 9.2. About Me */
 
