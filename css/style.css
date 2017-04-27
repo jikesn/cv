@@ -19,9 +19,9 @@ QQ：740749820
 		7.2. Skills Info
 		7.3. skills more
 	8. Project details
-	9. Contact
-		9.1. Map Styles
-		9.2. Contact Info
+	9. Other
+		9.1. Apply For
+		9.2. About Me
 
 	10. Footer
 	11. Blog - Single Post
@@ -69,6 +69,10 @@ a:hover {
 .main-content {
 	margin: 100px 0;
 	overflow: hidden;
+}
+
+.clear{
+	clear:both;
 }
 
 /*-------------------------------------------------------------
@@ -428,14 +432,14 @@ a:hover {
 }
 
 .folio-img h4 {
-	font-size: 14px;
+	font-size: 20px;
 	font-weight: bold;
 	color: #2c383c;
-	margin: 0px 0 -3px;
+	margin: 0px 0 0px;
 }
 
 .folio-img p {
-	font-size: 11px;
+	font-size: 16px;
 	font-style: italic;
 	color: #2c383c;
 }
@@ -476,7 +480,6 @@ a:hover {
 
 .skills-display li::before,.project-content li::before{
 	content:"★";
-  color:#428eda;
 }
 
 .skills-display ul li,.project-content ul li {
@@ -779,9 +782,14 @@ article p {
 .project-wrap {
 	padding-top: 30px;
 }
+/* img slider  */
+.img-container {
+		width: 100%;
+		margin: 0;
+}
 
 /*--------------------------------------------
-                9. CONTACT
+                9. Other
 ---------------------------------------------- */
 
 .contact h4 {
@@ -798,45 +806,9 @@ article p {
 	background: #fff;
 }
 
-/* 9.1. Map Styles */
+/* 9.1. Apply For */
 
-.gmap {
-	padding: 0px;
-	height: 360px;
-	margin: 25px auto;
-}
-
-.gmap div {
-	-webkit-box-sizing: content-box;
-	-moz-box-sizing: content-box;
-	box-sizing: content-box;
-}
-
-#map {
-	display: block;
-	width: 100%;
-	height: 360px;
-	margin: 0 auto;
-}
-
-#map.large {
-	height: 500px;
-}
-
-#map img {
-	max-width: none !important;
-	height: auto;
-}
-
-/* 9.2. Contact Info */
-
-.contact-info p {
-	font-size: 15px;
-	line-height: 24px;
-	margin: 12px 0;
-}
-
-.contact-info {
+.apply-info {
 	padding-bottom: 25px;
 	border-bottom: 1px solid #ededed;
 	margin-bottom: 30px;
@@ -844,23 +816,28 @@ article p {
 	width: 100%;
 }
 
-.contact-info ul {
-	padding: 0px;
+.apply-info ul {
+	padding: 0 0 0 20px;
 }
-
-.contact-info ul li {
-	float: left;
-	font-size: 14px;
+.apply-info ul li::before{
+	content: "★"
+}
+.apply-info ul li {
+	font-size: 20px;
 	color: #828282;
 	list-style: none;
 	margin-right: 18px;
 }
 
-.contact-info ul li i {
+.apply-info ul li i {
 	margin-right: 5px;
 	color: #4c4d4f;
 	font-size: 16px;
 }
+
+/* 9.2. About Me */
+
+
 
 .contact-form form {
 	margin: 20px 0;

@@ -7,6 +7,14 @@ content:'';
 background:#428EDA;
 }
 
+.apply-info ul li::before{
+	color: #428EDA;
+}
+
+.skills-display li::before,.project-content li::before{
+  color:#428eda;
+}
+
 .sep1 {
 background:#428EDA;
 }
@@ -83,4 +91,3 @@ background:rgba(66,142,218,0.9);
 color:#4e503b;
 	color: #fff !important;
 }
-

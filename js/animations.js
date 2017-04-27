@@ -25,6 +25,8 @@ $(window).scroll(function() {
 		if (imagePos < topOfWindow+500) {
 			$(this).addClass("animated slideInRight");
 		}
+		console.log(topOfWindow);
+
 	});
 });
 
