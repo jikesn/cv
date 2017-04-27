@@ -475,7 +475,7 @@ a:hover {
 }
 
 .skills-display li::before,.project-content li::before{
-	content:"★ ";
+	content:"★";
   color:#428eda;
 }
 
@@ -616,7 +616,7 @@ a:hover {
 }
 
 .skills-info ul li p {
-	font-size: 13px;
+	font-size: 18px;
 	color: #9a9a9a;
 	margin-bottom: 1px;
 }
