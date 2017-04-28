@@ -11,6 +11,10 @@ background:#428EDA;
 	color: #428EDA;
 }
 
+.apply-info .somewords::before,.apply-info .somewords::after{
+		color:#428EDA;
+}
+
 .skills-display li::before,.project-content li::before{
   color:#428eda;
 }

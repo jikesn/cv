@@ -828,6 +828,35 @@ article p {
 	list-style: none;
 	height: 30px;
 	line-height: 30px;
+	overflow: hidden;
+}
+
+.apply-info .somewords{
+	padding: 25px;
+	color: #ddd;
+	background: #2c383c;
+	-webkit-border-top-left-radius: 50px;
+	-webkit-border-bottom-right-radius: 50px;
+	-moz-border-radius-topleft: 50px;
+	-moz-border-radius-bottomright: 50px;
+	border-top-left-radius: 50px;
+	border-bottom-right-radius: 50px;
+}
+
+.apply-info .somewords::before{
+	content:"“";
+	font-size:50px;
+	font-weight: 600;
+  vertical-align: bottom;
+  line-height: 18px;
+}
+
+.apply-info .somewords::after{
+	content:"”";
+	font-size:50px;
+	font-weight: 600;
+  vertical-align: bottom;
+  line-height: 18px;
 }
 
 
